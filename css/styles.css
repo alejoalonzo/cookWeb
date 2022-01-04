@@ -1,0 +1,504 @@
+/*https://dribbble.com/shots/12998905-EasyMeals-Food-Blog-WordPress-Theme/attachments/4599892?mode=media*/
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+
+  box-sizing: border-box;
+}
+/*Form---------------------------------------------------*/
+
+form {
+  display: flex;
+  justify-content: center;
+  background-color: #222;
+  width: 100%;
+  height: 70px;
+  border-radius: 10px 10px 0 0;
+}
+#LinkSuscribe {
+  color: #fee86e;
+  font-size: 1.2rem;
+}
+
+/* Tooltip arrow */
+
+#contentForm {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  color: white;
+  margin-top: 20px;
+}
+#flecha-down {
+  width: 0px;
+  height: 0px;
+  border-left: 20px solid transparent; /* izquierda flecha */
+  border-right: 20px solid transparent; /* derecha flecha */
+  border-top: 20px solid #222; /* base flecha y color*/
+  font-size: 0px;
+  line-height: 0px;
+  margin-left: 345px;
+}
+#submitForm {
+  background-color: #fee86e;
+  border: none;
+  height: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#submitForm:hover {
+  background-color: #222;
+  color: #fee86e;
+  cursor: pointer;
+  border: 1px solid #fee86e;
+}
+.inputsForm {
+  border: none;
+  height: 35px;
+  padding-left: 20px;
+}
+.inputsForm:hover {
+  cursor: pointer;
+}
+/*fin Form---------------------------------------------------*/
+
+/*buscador ---------------------------------------------------*/
+#buscador {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  width: 100%;
+  height: 120px;
+}
+#contentBuscador {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+#buscadorCategories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+#buscadorAcordion {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 40px;
+  border-left: 1px solid gray;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+#searchIcon {
+  height: 41px;
+  width: 40px;
+  background-color: #fee86e;
+  text-align: center;
+  line-height: 225%;
+  margin-bottom: 1px;
+}
+#searchIcon:hover {
+  cursor: pointer;
+}
+
+#cart {
+  display: flex;
+  justify-content: flex-end;
+}
+#cart i {
+  margin-left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cart i:hover {
+  cursor: pointer;
+  color: #666666;
+}
+/*buscador ---------------------------------------------------*/
+
+/*navbar ---------------------------------------------------*/
+#navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#navbarText {
+  display: flex;
+  list-style: none;
+  width: 50%;
+}
+#navbarText :hover {
+  color: #666666;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#navbarText li {
+  margin-right: 10px;
+  color: #222;
+}
+#navbarIcon {
+  display: flex;
+  list-style: none;
+  width: 15%;
+  justify-content: flex-end;
+}
+#navbarIcon li {
+  margin-left: 10px;
+}
+#navbarIcon li:hover {
+  color: #666666;
+  cursor: pointer;
+}
+
+/*fin navbar ---------------------------------------------------*/
+/*slider ---------------------------------------------------*/
+.slide {
+  width: 100%;
+  height: 900px;
+}
+
+#cuadroTexto1 {
+  height: 40%;
+  width: 35%;
+  background-color: rgb(246, 246, 246);
+  text-align: start;
+  margin-left: 15%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: stretch;
+  flex-wrap: wrap;
+  align-items: stretch;
+  position: absolute;
+  margin-top: 10%;
+  font-family: "Libre Baskerville", serif;
+  font-size: 3.5rem;
+  color: #222;
+  padding-left: 30px;
+  z-index: 5;
+}
+#cuadroTexto1 span {
+  font-family: "Libre Baskerville", serif;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  width: 90%;
+  color: rgb(92, 92, 92);
+}
+#cuadroTexto1Icons {
+  text-align: end;
+  margin-right: 30px;
+}
+#cuadroTexto1Icons i {
+  border-radius: 50%;
+  border: 1px solid gray;
+  padding: 5px;
+  font-size: 0.8rem;
+}
+#cuadroTexto1Icons i:hover {
+  cursor: pointer;
+}
+/*fin slider ---------------------------------------------------*/
+
+/*cards----------------------------------------------------------*/
+#cardsContent {
+  display: flex;
+  justify-content: center;
+}
+#cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 65%;
+  height: 550px;
+}
+.card {
+  width: 30%;
+  height: 100%;
+  background-color: #fee86e;
+}
+#card1 {
+  background-image: url("../media/aliet-kitchen-JBIK4QZOFfc-unsplash.jpg");
+  background-size: cover;
+}
+#card2 {
+  background-image: url("../media/brooke-lark-V4MBq8kue3U-unsplash.jpg");
+  background-size: cover;
+}
+#card3 {
+  background-image: url("../media/emile-mbunzama-cLpdEA23Z44-unsplash.jpg");
+  background-size: cover;
+}
+.card {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.cuadroTextoCards {
+  display: flex;
+  width: 90%;
+  height: 30%;
+  background-color: rgba(246, 246, 246, 0.7);
+  padding: 10px;
+  margin: 5%;
+}
+.titleAndTextCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.cuadroTextoCards i {
+  margin: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+.cuadroTextoCards i:hover {
+  cursor: pointer;
+}
+.CardTextH3 {
+  text-align: left;
+  font-family: "Libre Baskerville", serif;
+}
+/*Fin cards--------------------------------------------------*/
+
+/*recipes ---------------------------------------------------*/
+#recipes {
+  width: 100%;
+  height: 900px;
+  margin-top: 100px;
+  background-image: url("../media/cookies.jpg");
+  background-size: cover;
+}
+#cuadroTextorecipes {
+  height: 80%;
+  width: 50%;
+  text-align: start;
+  margin-left: 15%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: stretch;
+  flex-wrap: wrap;
+  align-items: stretch;
+  position: absolute;
+  margin-top: 3%;
+  font-size: 4.5rem;
+  color: #222;
+  padding-left: 30px;
+}
+
+#newestBook {
+  color: #222;
+  font-family: "Libre Baskerville", serif;
+}
+#cuadroTextorecipes span {
+  width: 90%;
+  font-family: "Libre Baskerville", serif;
+}
+#texBookLorem {
+  font-size: 1.5rem;
+  margin-top: 2%;
+}
+#booksContent {
+  height: 230px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.books {
+  height: 200px;
+  width: 150px;
+  background-color: #b4b09b;
+
+  margin: 3%;
+}
+#book1 {
+  background-image: url("../media/the-basic-cook-book-guide.jpg");
+  background-size: cover;
+  border: 2px solid #222;
+}
+#book2 {
+  background-image: url("../media/the-plan-buy-cook-book.jpg");
+  background-size: cover;
+  border: 2px solid #222;
+}
+#book3 {
+  background-image: url("../media/A1aBPIZyM5L.jpg");
+  background-size: cover;
+  border: 2px solid #222;
+}
+/*fin recipes ---------------------------------------------------*/
+
+/*articles ---------------------------------------------------*/
+#contentParentArticle {
+  display: flex;
+  justify-content: center;
+}
+
+#articleContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 65%;
+}
+
+#articles {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgArticle {
+  width: 33%;
+  height: 300px;
+  display: flex;
+  background-size: cover;
+}
+.imgArticleSide {
+  width: 33%;
+  height: 300px;
+  display: flex;
+  background-size: cover;
+  justify-content: end;
+}
+.textArticle {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.titleAndTextArticle .iconArticle {
+  padding-right: 10px;
+}
+.iconArticle i {
+  padding-right: 15px;
+  color: #666666;
+}
+.iconArticle i:hover {
+  cursor: pointer;
+}
+.articleTextH3 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.7;
+  color: #222;
+}
+.texarticleLorem {
+  margin-top: 20px;
+  color: #666666;
+}
+#imgArticleSide2 {
+  background-color: #f7f7f7;
+  width: 93%;
+  display: flex;
+}
+#subTitlleImgArticleSide {
+  margin: 0 auto;
+  flex-direction: column;
+}
+#imgArticleSide2 h3 {
+  font-family: "Libre Baskerville", serif;
+  display: flex;
+  justify-content: center;
+  font-size: 1.8rem;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#imgArticleSide2 #subTitlleImgArticleSide span {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  color: #666666;
+}
+#imgArticleSide2 #subTitlleImgArticleSide form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  margin-top: 40px;
+  background-color: transparent;
+}
+
+#imgArticleSide2 #subTitlleImgArticleSide form input {
+  height: 35px;
+  padding-top: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+#submitImgArticleSide {
+  background-color: #222;
+  color: #f7f7f7;
+  border: none;
+}
+#submitImgArticleSide:hover {
+  background-color: #f7f7f7;
+  color: #222;
+  cursor: pointer;
+  border: 1px solid #222;
+}
+
+#imgArticleSide3 {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #222;
+  width: 65%;
+  margin: auto;
+  text-align: center;
+}
+#imgArticleSide3 span {
+  padding-top: 15%;
+  text-align: center;
+  background-color: #fff;
+}
+#imgArticleSide3 #social {
+  background-color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+#imgArticleSide3 #social i:hover {
+  color: #666666;
+  cursor: pointer;
+}
+
+/*fin articles ---------------------------------------------------*/
+
+/*--Footer-------------------------------------------------------*/
+#footerContainer {
+  width: 100%;
+  height: 300px;
+  background-color: #222;
+  display: flex;
+}
+#footerContainer #contact {
+  width: 50%;
+  height: 100%;
+}
+#footerContainer #contact h3 {
+  padding-top: 10%;
+  padding-right: 5%;
+  text-align: end;
+  color: #f7f7f7;
+}
+#footerContainer #contact #spanText {
+  text-align: right;
+  padding-left: 45%;
+  padding-right: 5%;
+  color: #f7f7f7;
+}
+#footerContainer #map {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 3%;
+}

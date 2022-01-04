@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/09fe00cf62.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+    <title>CookWeb</title>
+</head>
+
+<body>
+
+    <section id="global">
+        <!-- cabecera ---------------------------------------------------------->
+        <header>
+            <!-- form ---------------------------------------------------------->
+            <form action="">
+                <div id="contentForm">
+                    <div id="textForm">
+                        <a href="#" target="_blank" rel="noopener noreferrer" id="LinkSuscribe">Subscribe</a> to get a
+                        free eCookBook our top 25 recipes
+                    </div>
+                    <div id="inputsForm">
+                        <input type="text" placeholder="Name" class="inputsForm">
+                        <input type="text" placeholder="Email" class="inputsForm">
+                        <input type="submit" id="submitForm" value="SUBSCRIBE">
+                    </div>
+                </div>
+            </form>
+            <div id="flecha-down"></div>
+            <!-- fin form ---------------------------------------------------------->
+
+            <!-- fin buscador ---------------------------------------------------------->
+            <div id="buscador">
+                <div id="contentBuscador">
+                    <img src="media/logo.jpg" alt="">
+                    <div id="buscadorCategories">
+                        <div id="buscadorAcordion">
+                            <i class="fas fa-search" id="searchIcon"></i>
+                        </div>
+                    </div>
+                    <div id="cart">
+                        <i class="far fa-bookmark"> Favorite</i>
+                        <i class="fas fa-shopping-cart"> Cart</i>
+                    </div>
+                </div>
+
+            </div>
+            <!-- fin buscador ---------------------------------------------------------->
+            <!--  navbar ---------------------------------------------------------->
+            <div id="navbar">
+                <ul id="navbarText">
+                    <li>Home</li>
+                    <li>Categories</li>
+                    <li>recipes</li>
+                    <li>Contact</li>
+                    <li>About</li>
+                </ul>
+                <ul id="navbarIcon">
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                    <li></li>
+                </ul>
+
+            </div>
+            <!--  navbar ---------------------------------------------------------->
+            <!--  slider ---------------------------------------------------------->
+            <div id="cuadroTexto1">
+                Chesse Cake with Blueberry
+                <span>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum dignissimos asperiores tempore
+                    natus eligendi voluptatibus officia quo.
+                </span>
+                <div id="cuadroTexto1Icons">
+                    <i class="far fa-bookmark"> </i>
+                    <i class="fas fa-share-alt"></i>
+                </div>
+            </div>
+
+            <div id="slider" class="slider">
+                <div class="slide" id="slide1">
+                    <img src="./media/tamanna-rumee-DUDNfnI1cK8-unsplash.jpg" alt="">
+                </div>
+                <div class="slide"><img src="./media/brina-blum-P9WkD82hLUI-unsplash.jpg" alt=""></div>
+                <div class="slide"><img src="./media/yoori-koo-FmGpqW7e-O4-unsplash.jpg" alt=""></div>
+            </div>
+
+
+
+            <!-- fin slider ---------------------------------------------------------->
+        </header>
+        <!-- fin cabecera ---------------------------------------------------------->
+        <!-- tarjetas ---------------------------------------------------------->
+        <div id="cardsContent">
+            <div id="cards">
+                <div class="card" id="card1">
+                    <div class="cuadroTextoCards">
+                        <div class="titleAndTextCard">
+                            <h3 class="CardTextH3">Brownie with Strawberry</h3>
+                            <span class="texCardLorem">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            </span>
+                        </div>
+                        <i class="far fa-bookmark"> </i>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    <div class="cuadroTextoCards">
+                        <div class="titleAndTextCard">
+                            <h3 class="CardTextH3">Mini fruitCakes</h3>
+                            <span class="texCardLorem">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            </span>
+                        </div>
+                        <i class="far fa-bookmark"> </i>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    <div class="cuadroTextoCards">
+                        <div class="titleAndTextCard">
+                            <h3 class="CardTextH3">Cup Icecream</h3>
+                            <span class="texCardLorem">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            </span>
+                        </div>
+                        <i class="far fa-bookmark"> </i>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin tarjetas ---------------------------------------------------------->
+
+        <!-- recetas ---------------------------------------------------------->
+        <div id="recipes">
+            <div id="cuadroTextorecipes">
+                <span>
+                    Check out our <a href="http://" target="_blank" rel="noopener noreferrer" id="newestBook">newest
+                    </a>
+                    vegan recipes book
+                </span>
+                <span id="texBookLorem">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, cupiditate saepe.
+                </span>
+                <div id="booksContent">
+                    <div class="books" id="book1"></div>
+                    <div class="books" id="book2"></div>
+                    <div class="books" id="book3"></div>
+                </div>
+
+            </div>
+        </div>
+        <!-- fin recetas ---------------------------------------------------------->
+
+        <!-- articles ---------------------------------------------------------->
+        <div id="contentParentArticle">
+
+            <div id="articleContent">
+                <!-- row articles -------------------------------------->
+                <div id="articles">
+                    <div class="imgArticle">
+                        <div id="imgArticle1" id="img1">
+                            <img src="./media/img1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="textArticle" id="textArticle1">
+                        <div class="cuadroTextoArticle">
+                            <div class="titleAndTextArticle">
+                                <div class="iconArticle">
+                                    <i class="fas fa-video"> 03:45</i>
+                                    <i class="fas fa-tag"> SafeFood</i>
+                                </div>
+
+                                <h3 class="articleTextH3">Serving safe food it's not an option, it's an obligation.</h3>
+                                <span class="texarticleLorem">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quis quas culpa
+                                    inventore
+                                    aspernatur autem labore, reprehenderit
+                                    ducimus odio maiores doloribus eveniet repellendus?
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgArticleSide">
+                        <div id="imgArticleSide1">
+                            <img src="./media/app.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- fin row articles -------------------------------------->
+
+
+                <!-- row articles -------------------------------------->
+                <div id="articles">
+                    <div class="imgArticle">
+                        <div id="imgArticle1" id="img1">
+                            <img src="./media/img3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="textArticle" id="textArticle1">
+                        <div class="cuadroTextoArticle">
+                            <div class="titleAndTextArticle">
+                                <div class="iconArticle">
+                                    <i class="fas fa-video"> 45 Minutes</i>
+                                    <i class="fas fa-tag"> Healthy</i>
+                                </div>
+
+                                <h3 class="articleTextH3">5 Ingredients / Quick & Easy. Food Series 1.
+                                </h3>
+                                <span class="texarticleLorem">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quis quas culpa
+                                    inventore
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgArticleSide">
+                        <div id="imgArticleSide2">
+                            <div id="subTitlleImgArticleSide">
+                                <h3>Never miss a post!</h3>
+                                <span>
+                                    Signup for free and bethe first to get notified on new updateds
+                                </span>
+                                <form action="">
+                                    <input type="text" placeholder=" Your E-mail" />
+                                    <input id="submitImgArticleSide" type="submit" value="Subscribe" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin row articles -------------------------------------->
+                <div id="articles">
+                    <div class="imgArticle">
+                        <div id="imgArticle1" id="img1">
+                            <img src="./media/img4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="textArticle" id="textArticle1">
+                        <div class="cuadroTextoArticle">
+                            <div class="titleAndTextArticle">
+                                <div class="iconArticle">
+                                    <i class="fas fa-video"> 5 Minutes</i>
+                                    <i class="fas fa-tag"> Italian Food</i>
+                                </div>
+
+                                <h3 class="articleTextH3">How to create Spaggetti in 5 minutes.</h3>
+                                <span class="texarticleLorem">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quis quas culpa
+                                    inventore
+                                    t repellendus aspernatur autem labore,
+                                    reprehenderit?
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgArticleSide">
+                        <div id="imgArticleSide3">
+                            <div>
+                                <span>Follow me</span>
+                                <div id="social">
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-facebook-square"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row articles -------------------------------------->
+                <div id="articles">
+                    <div class="imgArticle">
+                        <div id="imgArticle1" id="img1">
+                            <img src="./media/img5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="textArticle" id="textArticle1">
+                        <div class="cuadroTextoArticle">
+                            <div class="titleAndTextArticle">
+                                <div class="iconArticle">
+                                    <i class="fas fa-video"> 30 Minutes</i>
+                                    <i class="fas fa-tag"> Vegetable</i>
+                                </div>
+                                <h3 class="articleTextH3">People who love to eat are always the best people.</h3>
+                                <span class="texarticleLorem">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quis quas culpa
+                                    inventore.
+
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgArticleSide">
+                        <div id="imgArticleSide">
+                            <div>
+                            </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin row articles -------------------------------------->
+        </div>
+        </div>
+        <!-- fin articles ---------------------------------------------------------->
+        <!-- fotter ---------------------------------------------------------->
+        <div id="footerContainer">
+            <div id="contact">
+                <h3>contact us</h3>
+                <div id="spanText">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, necessitatibus dolor adipisci
+                        ut.
+                        Odio molestias dolores esse ea ducimus. Dolores, quam!
+                    </span>
+                </div>
+            </div>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11976.234901237462!2d2.078599841109573!3d41.37280882066927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4996d77940bad%3A0x6aa9266e5a16fcbb!2sLa%20Plana%2C%2008950%20Esplugues%20de%20Llobregat%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1641291221690!5m2!1ses!2ses"
+                    width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+        <!-- fin fotter ---------------------------------------------------------->
+
+
+    </section>
+
+</body>
+
+</html>

@@ -346,29 +346,40 @@ form {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
-  width: 65%;
+  width: 43%;
 }
 
 #articles {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+}
+#sidebarContent {
+  display: flex;
+  width: 21%;
+}
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 100px;
 }
 
 .imgArticle {
-  width: 33%;
+  width: 100%;
   height: 300px;
   display: flex;
   background-size: cover;
 }
+
 .imgArticleSide {
-  width: 33%;
+  width: 100%;
   height: 300px;
   display: flex;
   background-size: cover;
   justify-content: end;
 }
 .textArticle {
-  width: 30%;
+  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -392,6 +403,7 @@ form {
   margin-top: 20px;
   color: #666666;
 }
+
 #imgArticleSide2 {
   background-color: #f7f7f7;
   width: 93%;

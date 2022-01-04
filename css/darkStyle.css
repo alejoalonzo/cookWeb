@@ -1,0 +1,65 @@
+/* * {
+  background-color: #010409;
+
+} */
+*,
+#imgArticleSide3 span {
+  background-color: #161b22;
+}
+#cuadroTextorecipes,
+#cuadroTextorecipes span,
+#cuadroTextorecipes a,
+#booksContent,
+.titleAndTextCard,
+.cuadroTextoCards i,
+.titleAndTextCard,
+.titleAndTextCard h3,
+.titleAndTextCard span,
+#cuadroTexto1 span,
+#cuadroTexto1Icons,
+#cuadroTexto1Icons i,
+#subTitlleImgArticleSide,
+#subTitlleImgArticleSide span,
+#subTitlleImgArticleSide,
+#subTitlleImgArticleSide h3,
+#buscador,
+#imgArticleSide3 span {
+  background-color: transparent;
+}
+#flecha-down {
+  border-top: 20px solid #010409;
+}
+form,
+#contentForm,
+#textForm,
+#inputsForm,
+#contact,
+#footerContainer h3,
+#footerContainer span,
+#spanText,
+#map,
+#footerContainer {
+  background-color: #010409;
+}
+.inputsForm,
+.texarticleLorem,
+.iconArticle i {
+  color: #cecece;
+}
+.articleTextH3 {
+  color: #ffff;
+}
+#navbarIcon,
+#navbar,
+#cart,
+#navbarText li,
+.btnTheme i,
+#imgArticleSide3 span {
+  color: #f7f7f7 !important;
+}
+
+.btnTheme i,
+#imgArticleSide3 {
+  background-color: #f7f7f7;
+  border-color: #f7f7f7;
+}

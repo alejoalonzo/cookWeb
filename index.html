@@ -11,6 +11,7 @@
     <script src="js/main.js"></script>
     <!-- styles -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/darkStyle.css"> -->
     <!-- iconos -->
     <script src="https://kit.fontawesome.com/09fe00cf62.js" crossorigin="anonymous"></script>
     <!-- fonts -->
@@ -37,11 +38,13 @@
                         <a href="#" target="_blank" rel="noopener noreferrer" id="LinkSuscribe">Subscribe</a> to get a
                         free eCookBook our top 25 recipes
                     </div>
+
                     <div id="inputsForm">
                         <input type="text" placeholder="Name" class="inputsForm">
                         <input type="text" placeholder="Email" class="inputsForm">
                         <input type="submit" id="submitForm" value="SUBSCRIBE">
                     </div>
+
                 </div>
             </form>
             <div id="flecha-down"></div>
@@ -60,6 +63,7 @@
                         <i class="far fa-bookmark"> Favorite</i>
                         <i class="fas fa-shopping-cart"> Cart</i>
                     </div>
+
                 </div>
 
             </div>
@@ -67,12 +71,27 @@
             <!--  navbar ---------------------------------------------------------->
             <div id="navbar">
                 <ul id="navbarText">
-                    <li>Home</li>
-                    <li>Categories</li>
-                    <li>recipes</li>
-                    <li>Contact</li>
-                    <li>About</li>
+                    <a href="">
+                        <li>Home</li>
+                    </a>
+                    <a href="#cardsContent">
+                        <li>Categories</li>
+                    </a>
+                    <a href="#recipes">
+                        <li>Books</li>
+                    </a>
+                    <a href="#contentParentArticle">
+                        <li>Posts</li>
+                    </a>
+                    <div class="btnTheme">
+                        <button><i class="fas fa-moon"></i></button>
+                    </div>
+                    <div class="btnTheme">
+                        <button><i class="fas fa-sun"></i></button>
+                    </div>
                 </ul>
+
+
                 <ul id="navbarIcon">
                     <li><i class="fab fa-twitter"></i></li>
                     <li><i class="fab fa-facebook-square"></i></li>
@@ -80,6 +99,7 @@
                     <li><i class="fab fa-youtube"></i></li>
                     <li></li>
                 </ul>
+
 
             </div>
             <!--  navbar ---------------------------------------------------------->

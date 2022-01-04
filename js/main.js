@@ -43,6 +43,15 @@ $(document).ready(function () {
         " Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quis quas culpa inventore.",
       side: "",
     },
+    {
+      image: './media/img1.jpg" alt="',
+      time: "03:45",
+      tag: "SafeFood",
+      title: "Serving safe food it's not an option, it's an obligation.",
+      content:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quis quas culpa inventore aspernatur autem labore, reprehenderit ducimus odio maiores doloribus eveniet repellendus?",
+      side: "",
+    },
   ];
   //console.log(posts);
 

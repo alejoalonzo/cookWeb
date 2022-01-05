@@ -11,7 +11,13 @@
     <script src="js/main.js"></script>
     <!-- styles -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="stylesheet" href="css/darkStyle.css"> -->
+    <link id="theme" rel="stylesheet" href="">
+    <!-- styles Jquery ui -->
+    <link rel="stylesheet" href="js/jquery-ui-1.13.0/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.0/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.13.0/jquery-ui.theme.min.css">
+    <!-- El UI se carga despues del jquery -->
+    <script type="text/javascript" src="js/jquery-ui-1.13.0/jquery-ui.min.js"></script>
     <!-- iconos -->
     <script src="https://kit.fontawesome.com/09fe00cf62.js" crossorigin="anonymous"></script>
     <!-- fonts -->
@@ -21,6 +27,10 @@
     <!-- slider -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- moment -->
+    <script src="js/moment.js"></script>
+    <script src="js/momentWithLocale.js"></script>
+
 
 
     <title>CookWeb</title>
@@ -53,7 +63,10 @@
             <!-- fin buscador ---------------------------------------------------------->
             <div id="buscador">
                 <div id="contentBuscador">
-                    <img src="media/logo.jpg" alt="">
+                    <div id="logo">
+
+                    </div>
+                    <!-- <img src="media/logo.jpg" alt=""> -->
                     <div id="buscadorCategories">
                         <div id="buscadorAcordion">
                             <i class="fas fa-search" id="searchIcon"></i>
@@ -83,10 +96,10 @@
                     <a href="#contentParentArticle">
                         <li>Posts</li>
                     </a>
-                    <div class="btnTheme">
+                    <div id="themeNight" class="btnTheme">
                         <button><i class="fas fa-moon"></i></button>
                     </div>
-                    <div class="btnTheme">
+                    <div id="themeDay" class="btnTheme">
                         <button><i class="fas fa-sun"></i></button>
                     </div>
                 </ul>
@@ -132,38 +145,104 @@
             <div id="cards">
                 <div class="card" id="card1">
                     <div class="cuadroTextoCards">
-                        <div class="titleAndTextCard">
-                            <h3 class="CardTextH3">Brownie with Strawberry</h3>
-                            <span class="texCardLorem">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            </span>
+                        <div class="titleAndTextCard accordion">
+                            <h3 class="CardTextH3">Brownie with Strawberry
+                                <i class="far fa-bookmark"> </i>
+                                <i class="fas fa-share-alt"></i>
+                            </h3>
+                            <div>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet.
+                                </p>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor sit amet consectetur adipisicing elit. Enim, necessitatibus
+                                </p>
+                            </div>
+                            <h3 class="CardTextH3">Pie Aple
+                                <i class="far fa-bookmark"> </i>
+                            </h3>
+                            <div>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolorelit.
+                                </p>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    sit amet consectetur adipisicing elit.
+                                    Dolor sit amet consectetur adipisicing elit. Enim,
+                                </p>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                            </div>
                         </div>
-                        <i class="far fa-bookmark"> </i>
-                        <i class="fas fa-share-alt"></i>
+
                     </div>
                 </div>
                 <div class="card" id="card2">
                     <div class="cuadroTextoCards">
-                        <div class="titleAndTextCard">
-                            <h3 class="CardTextH3">Mini fruitCakes</h3>
-                            <span class="texCardLorem">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            </span>
+                        <div class="titleAndTextCard accordion">
+                            <h3 class="CardTextH3">Mini fruitCakes
+
+                                <i class="fas fa-share-alt"></i>
+                            </h3>
+                            <div>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet.
+                                </p>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor sit amet consectetur adipisicing elit. Enim, necessitatibus
+                                </p>
+                            </div>
+                            <h3 class="CardTextH3">Cake Chocolate
+                                <i class="far fa-bookmark"> </i>
+                            </h3>
+                            <div>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet.
+                                </p>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor sit amet consectetur adipisicing elit. Enim, necessitatibus
+                                </p>
+                            </div>
                         </div>
-                        <i class="far fa-bookmark"> </i>
-                        <i class="fas fa-share-alt"></i>
                     </div>
                 </div>
                 <div class="card" id="card3">
                     <div class="cuadroTextoCards">
-                        <div class="titleAndTextCard">
-                            <h3 class="CardTextH3">Cup Icecream</h3>
-                            <span class="texCardLorem">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                            </span>
+                        <div class="titleAndTextCard accordion">
+                            <h3 class="CardTextH3">Cup Icecream
+                                <i class="far fa-bookmark"> </i>
+                                <i class="fas fa-share-alt"></i>
+                            </h3>
+                            <div>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet.
+                                </p>
+                                <p class="texCardLorem">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor sit amet consectetur adipisicing elit. Enim, necessitatibus
+                                </p>
+                            </div>
                         </div>
-                        <i class="far fa-bookmark"> </i>
-                        <i class="fas fa-share-alt"></i>
                     </div>
                 </div>
             </div>
@@ -235,6 +314,8 @@
                             </div>
                         </div>
                     </div>
+                    <div id="reloj">
+                    </div>
                 </div>
             </div>
             <!-- fin sidebar ---------------------------------------------->
@@ -260,7 +341,11 @@
                     width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
 
+            <div id="backToTop">
+                <i class="fas fa-arrow-up"></i>
+            </div>
         </div>
+
         <!-- fin fotter ---------------------------------------------------------->
 
 

@@ -1,11 +1,12 @@
 $(document).ready(function () {
-  //slider--------------------
+  //slider---------------------------------------------------------------------------------------------------------------------------
+  //Requiere libreria bxSlider
   $(".slider").bxSlider({
     auto: true,
     speed: 500,
   });
 
-  //posts
+  //posts------------------------------------------------------------------------------------------------------------------------------
   var posts = [
     {
       image: './media/img1.jpg" alt="',
@@ -85,4 +86,40 @@ $(document).ready(function () {
     //añadir el json al html( asi los añade todo de golpe)
     $("#articleContent").append(post);
   });
+
+  //Selector de tema--------------------------------------------------------------------------------------
+  $("#themeNight").click(function () {
+    $("#theme").attr("href", "css/darkStyle.css");
+  });
+  $("#themeDay").click(function () {
+    $("#theme").attr("href", "");
+  });
+
+  //Back to top-----------------------------------------------------------------------------------------
+  $("#backToTop").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      600
+    );
+    return false;
+  });
+
+  //Accordion----------------------------------------------------------------------------------------------
+  //Requiere libreria jquery ui
+  $(function () {
+    $(".accordion").accordion({
+      header: "h3",
+      collapsible: true,
+      active: false,
+    });
+  });
+
+  //Reloj----------------------------------------------------------------------------------------------
+  //Requiere libreria moment.js
+  setInterval(function () {
+    var reloj = moment().format("hh:mm:ss");
+    $("#reloj").html(reloj);
+  }, 1000);
 });

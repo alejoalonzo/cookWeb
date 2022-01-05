@@ -64,6 +64,12 @@ form {
 /*fin Form---------------------------------------------------*/
 
 /*buscador ---------------------------------------------------*/
+#logo {
+  background-image: url("../media/logo.jpg");
+  background-size: cover;
+  width: 251px;
+  height: 84px;
+}
 #buscador {
   display: flex;
   justify-content: center;
@@ -248,7 +254,7 @@ form {
 .cuadroTextoCards {
   display: flex;
   width: 90%;
-  height: 30%;
+  height: auto;
   background-color: rgba(246, 246, 246, 0.7);
   padding: 10px;
   margin: 5%;
@@ -259,9 +265,8 @@ form {
 }
 
 .cuadroTextoCards i {
-  margin: 5px;
-  display: flex;
-  justify-content: flex-end;
+  padding-left: 5px;
+  text-align: end;
 }
 .cuadroTextoCards i:hover {
   cursor: pointer;
@@ -269,6 +274,20 @@ form {
 .CardTextH3 {
   text-align: left;
   font-family: "Libre Baskerville", serif;
+}
+
+.ui-accordion .ui-accordion-header {
+  background-color: transparent;
+  border: none;
+  font-family: "Libre Baskerville", serif;
+  width: 100%;
+  color: black;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.ui-accordion .ui-accordion-content {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #222;
 }
 /*Fin cards--------------------------------------------------*/
 
@@ -488,6 +507,9 @@ form {
   color: #666666;
   cursor: pointer;
 }
+#reloj {
+  margin: 0 auto;
+}
 
 /*fin articles ---------------------------------------------------*/
 
@@ -519,4 +541,18 @@ form {
   align-items: center;
   justify-content: start;
   padding-left: 3%;
+}
+#backToTop {
+  color: #f7f7f7;
+  display: flex;
+  justify-content: end;
+  text-align: end;
+  cursor: pointer;
+  width: 30%;
+}
+
+#backToTop i {
+  padding-top: 10%;
+  padding-right: 10%;
+  font-size: 1.5rem;
 }

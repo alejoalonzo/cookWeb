@@ -3,6 +3,7 @@
 
 } */
 *,
+#imgArticleSide3,
 #imgArticleSide3 span {
   background-color: #161b22;
 }
@@ -23,7 +24,9 @@
 #subTitlleImgArticleSide,
 #subTitlleImgArticleSide h3,
 #buscador,
-#imgArticleSide3 span {
+#imgArticleSide3 span,
+#imgArticleSide3 #social,
+.texCardLorem {
   background-color: transparent;
 }
 #flecha-down {
@@ -38,7 +41,8 @@ form,
 #footerContainer span,
 #spanText,
 #map,
-#footerContainer {
+#footerContainer,
+#LinkSuscribe {
   background-color: #010409;
 }
 .inputsForm,
@@ -53,13 +57,17 @@ form,
 #navbar,
 #cart,
 #navbarText li,
+#imgArticleSide3 span,
 .btnTheme i,
-#imgArticleSide3 span {
+#social i {
   color: #f7f7f7 !important;
 }
 
-.btnTheme i,
 #imgArticleSide3 {
-  background-color: #f7f7f7;
   border-color: #f7f7f7;
+}
+
+#logo {
+  background-image: url("../media/logoDark.jpg");
+  background-size: cover;
 }
